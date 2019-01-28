@@ -1,0 +1,6 @@
+1，生成ssk key
+ssh-keygen 
+2，运行ssh代理
+eval "$(ssh-agent -s)"
+3，把生成的私钥增加到SSH配置中
+ssh-add id_rsa路径
