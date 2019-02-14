@@ -20,10 +20,10 @@ class BaseDesk():
         self.root.title("主窗口")
         self.root.geometry("200x200")
 
-        Initface(self.root)
+        TelnetFrame(self.root)
 
 
-class Initface():
+class TelnetFrame():
     def __init__(self,master):
         self.master = master
         self.master.config(bg="green")
@@ -34,10 +34,10 @@ class Initface():
 
     def change(self,):
         self.initface.destroy()
-        Face_1(self.master)
+        ConsoleFrame(self.master)
 
     
-class Face_1():
+class ConsoleFrame():
     def __init__(self,master):
         self.master = master
         self.master.config(bg="blue")
@@ -48,7 +48,7 @@ class Face_1():
 
     def back(self):
         self.face_1.destroy()
-        Initface(self.master)
+        TelnetFrame(self.master)
 
 
 if __name__ == "__main__":
