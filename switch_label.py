@@ -44,6 +44,7 @@ class Face_1():
         self.face_1 = tkinter.Frame(self.master,)
         self.face_1.pack()
         btn_back = tkinter.Button(self.face_1,text="face 1 back ",command=self.back)
+        btn_back.pack()
 
     def back(self):
         self.face_1.destroy()
